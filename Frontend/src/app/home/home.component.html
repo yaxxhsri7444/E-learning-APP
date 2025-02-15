@@ -1,0 +1,96 @@
+<div class="container">
+  <!-- Hero Section -->
+  <section class="hero text-center text-white d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to Learnify</h1>
+      <p>Your gateway to knowledge and success</p>
+      <a href="#" class="btn Btn btn-warning "  >Explore Courses</a>
+    </div>
+  </section>
+
+  <!-- Trending Courses Section (Carousel) -->
+  <div>
+    <h2 class="section-title">Trending Course</h2>
+    <div
+      id="trendingCarousel"
+      class="carousel slide w-100"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          *ngFor="let course of trendingCourses; let i = index"
+          class="carousel-item"
+          [ngClass]="{ active: i === 0 }"
+        >
+          <div class="card course-card">
+            <img
+              [src]="course.image"
+              class="card-img-top"
+              alt="{{ course.title }}"
+            />
+            <div class="card-body-trend">
+              <h5 class="card-Title">{{ course.title }}</h5>
+              <p class="card-Text">{{ course.instructor }}</p>
+              <a href="#" class="btn btn-warning">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#trendingCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#trendingCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Popular Categories -->
+  <section class="categories text-center">
+    <h2 class="section-title">Popular Categories</h2>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let category of categories">
+        <div class="card category-card">
+          <img
+            [src]="category.image"
+            class="card-img-top"
+            alt="{{ category.name }}"
+          />
+          <div class="card-body ">
+            <h5 class="card-title">{{ category.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Choose Your Goal -->
+  <section class="choose-goal">
+    <h2 class="section-title">🎯Choose Your Goal</h2>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let goal of goals">
+        <div class="card goal-card">
+          <img [src]="goal.image" class="card-img-top" alt="{{ goal.name }}" />
+          <div class="card-body">
+            <h5 class="card-title">{{ goal.name }}</h5>
+            <p class="card-text">{{ goal.description }}</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

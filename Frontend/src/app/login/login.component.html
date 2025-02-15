@@ -1,0 +1,55 @@
+<div class="login-container p-0">
+  <div class="login-left">
+    <h1>Log In</h1>
+    <p class="subtitle">Enter your credentials to continue</p>
+
+    <!-- User Type Selection -->
+    <div class="role-selection">
+      <label class="form-label">Select Your Role:</label>
+      <div class="radio-buttons">
+        <input
+          type="radio"
+          id="student"
+          name="userType"
+          value="student"
+          checked
+        />
+        <label for="student">Student</label>
+        <input type="radio" id="teacher" name="userType" value="teacher" />
+        <label for="teacher">Teacher</label>
+      </div>
+    </div>
+
+    <!-- Email/Phone Input -->
+    <div class="input-group">
+      <label for="emailOrPhone">Email or Phone</label>
+      <input
+        type="text"
+        id="emailOrPhone"
+        placeholder="Enter your email or phone number"
+      />
+    </div>
+
+    <!-- Password Input -->
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" />
+    </div>
+
+    <!-- Login Button -->
+    <button type="submit" class="login-btn">Log In</button>
+
+    <!-- Signup Link -->
+    <p class="signup-text">
+      Don't have an account? <a href="/signup">Register</a>
+    </p>
+  </div>
+
+  <!-- Right Side: Image -->
+  <div class="login-right">
+    <img
+      src="login.png"
+      alt="Students Learning"
+    />
+  </div>
+</div>

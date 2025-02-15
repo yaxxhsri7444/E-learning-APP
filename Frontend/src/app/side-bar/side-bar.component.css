@@ -1,0 +1,43 @@
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: #151313; /* Dark background */
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+/* Hide text when collapsed */
+.sidebar.collapsed ul {
+    display: none;
+}
+
+/* Icon Styling */
+.icon-color {
+    color: #ff5734 !important; /* Red-Orange */
+    font-size: 22px;
+}
+
+/* Text Styling */
+.text-color {
+    color: #fccc42 !important; /* Yellow */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Toggle Button Icon */
+.toggle-icon {
+    color: #ff5734 !important;
+    font-size: 24px;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    background-color: rgba(255, 87, 52, 0.2); /* Light red-orange */
+    border-radius: 5px;
+}

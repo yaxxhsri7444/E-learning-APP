@@ -1,0 +1,36 @@
+.trending-courses {
+  padding: 40px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-card {
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+/* Make images responsive */
+.course-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

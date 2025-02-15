@@ -1,0 +1,121 @@
+/* Full-screen container */
+.login-container {
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #151313;
+}
+
+/* Left-side login section */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+}
+
+.login-left h1 {
+  font-size: 2.5rem;
+  color: #fccc42;
+}
+
+.subtitle {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Role selection */
+.role-selection {
+  margin-bottom: 15px;
+}
+
+.role-selection label {
+  font-weight: bold;
+  color: #fccc42;
+}
+
+.radio-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.radio-buttons input[type="radio"] {
+  accent-color: #fccc42;
+  transform: scale(1.2);
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #fccc42;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+  border: none;
+  color: #151313;
+  font-size: 16px;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #fccc42;
+  color: #151313;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #ff5734;
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 10px;
+  color: white;
+}
+
+.signup-text a {
+  color: #fccc42;
+  text-decoration: none;
+}
+
+/* Right-side image */
+.login-right {
+  flex: 1;
+  background-color: #151313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right img {
+    max-width: 80%;
+    height: auto;  
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-right {
+    display: none;
+  }
+}

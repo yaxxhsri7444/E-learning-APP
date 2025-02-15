@@ -1,0 +1,94 @@
+/* Navbar Background */
+.navbar {
+}
+
+/* Brand Name Styling */
+#h1 {
+  color: #fccc42 !important; /* Darker shade for contrast */
+  font-weight: bold;
+}
+
+#h2 {
+  color: #ff5734 !important;
+  font-weight: bold;
+}
+
+/* Welcome Text */
+.welcome-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #151313;
+  margin-right: 10px;
+}
+
+/* Align Logo and Brand */
+#head,
+#main-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Responsive Search Bar */
+/* Search Bar Styling */
+.search-bar {
+    width: 40%;
+    max-width: 300px;
+    color: #fccc42;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Change placeholder text color */
+.search-bar::placeholder {
+    color: #fccc42;
+}
+
+/* Search Bar Focus Effect */
+.search-bar:focus {
+    border-color: #fccc42;
+    box-shadow: 0px 0px 8px rgba(252, 252, 53, 0.6);
+}
+
+/* Icons Styling */
+.bi {
+  font-size: 1.5rem;
+}
+
+/* Notification Icon */
+.notification-icon {
+  color: #fccc42; /* Red-Orange */
+  cursor: pointer;
+}
+
+/* User Icon */
+.user-icon {
+  color: #fccc42; /* Yellow */
+}
+
+/* User Link */
+.user-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fccc42;
+  font-weight: bold;
+}
+
+.username-text {
+  color: #fccc42;
+  cursor: pointer;
+}
+
+.user-link :hover {
+  color: #ff5734;
+}
+.notification-icon :hover {
+  color: #ff5734;
+}
+.username-text :hover {
+  color: #ff5734;
+  text-decoration: underline;
+}
