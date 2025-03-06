@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 
 const userSchema = new mongoose.Schema({
-  name: { type: String, require: true },
-  email: { type: String, require: true, unique: true },
-  password: { type: String, require: true },
-  role: { type: String,enum:["student","teacher"], default: "student" },
+  username: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+  role: { type: String, enum: ["student", "teacher"], default: "student" },
 });
 
 userSchema.pre("save", async function (next) {
@@ -20,7 +20,5 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
-
-const User = new mongoose.model("User", userSchema);
-
+const User = mongoose.model("User", userSchema);
 module.exports = User;

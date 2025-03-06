@@ -1,66 +1,84 @@
 <div class="login-container p-0">
-    <div class="login-left">
-      <h1>Register Your Account</h1>
-      <p class="subtitle">Enter your credentials to continue</p>
-  
-      <!-- User Type Selection -->
+  <div class="login-left">
+    <h1>Register Your Account</h1>
+    <p class="subtitle">Enter your credentials to continue</p>
+
+    <!-- User Type Selection -->
+    <form #userRegister="ngForm" (ngSubmit)="registerUser()">
       <div class="role-selection">
         <label class="form-label">Select Your Role:</label>
+
         <div class="radio-buttons">
           <input
+            [(ngModel)]="role"
             type="radio"
+            name="role"
             id="student"
             name="userType"
             value="student"
             checked
           />
           <label for="student">Student</label>
-          <input type="radio" id="teacher" name="userType" value="teacher" />
+          <input
+            type="radio"
+            id="teacher"
+            name="role"
+            [(ngModel)]="role"
+            name="userType"
+            value="teacher"
+          />
           <label for="teacher">Teacher</label>
         </div>
       </div>
-  
+
       <!-- Username Input -->
       <div class="input-group">
         <label for="Username">Username</label>
         <input
           type="text"
           id="Username"
+          name="username"
+          [(ngModel)]="username"
           placeholder="Enter your Username"
         />
       </div>
-      
+
       <!-- Email/Phone Input -->
       <div class="input-group">
-        <label for="emailOrPhone">Email or Phone</label>
+        <label for="emailOrPhone">Email</label>
         <input
           type="text"
+          name="email"
           id="emailOrPhone"
-          placeholder="Enter your email or phone number"
+          [(ngModel)]="email"
+          placeholder="Enter your email"
         />
       </div>
-  
+
       <!-- Password Input -->
       <div class="input-group">
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Set your password" />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Set your password"
+        />
       </div>
-  
+
       <!-- Login Button -->
-      <button type="submit" class="login-btn">Register</button>
-  
+      <button type="submit" class="login-btn" >
+        Register
+      </button>
+
       <!-- Signup Link -->
-      <p class="signup-text">
-        I have an account. <a href="/login">Log In</a>
-      </p>
-    </div>
-  
-    <!-- Right Side: Image -->
-    <div class="login-right">
-      <img
-        src="register.png"
-        alt="Students Learning"
-      />
-    </div>
+      <p class="signup-text">I have an account. <a href="/login">Log In</a></p>
+    </form>
   </div>
-  
+
+  <!-- Right Side: Image -->
+  <div class="login-right">
+    <img src="register.png" alt="Students Learning" />
+  </div>
+</div>
