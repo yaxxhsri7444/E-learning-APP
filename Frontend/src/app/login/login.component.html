@@ -2,54 +2,62 @@
   <div class="login-left">
     <h1>Log In</h1>
     <p class="subtitle">Enter your credentials to continue</p>
-
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
     <!-- User Type Selection -->
-    <div class="role-selection">
-      <label class="form-label">Select Your Role:</label>
-      <div class="radio-buttons">
-        <input
-          type="radio"
-          id="student"
-          name="userType"
-          value="student"
-          checked
-        />
-        <label for="student">Student</label>
-        <input type="radio" id="teacher" name="userType" value="teacher" />
-        <label for="teacher">Teacher</label>
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+      <div class="role-selection">
+        <label class="form-label">Select Your Role:</label>
+        <div class="radio-buttons">
+          <input
+            type="radio"
+            id="student"
+            name="role"
+            value="student"
+            formControlName="role"
+            checked
+          />
+          <label for="student">Student</label>
+          <input type="radio" id="teacher" name="role" value="teacher" formControlName="role"/>
+          <label for="teacher">Teacher</label>
+        </div>
       </div>
-    </div>
 
-    <!-- Email/Phone Input -->
-    <div class="input-group">
-      <label for="emailOrPhone">Email or Phone</label>
-      <input
-        type="text"
-        id="emailOrPhone"
-        placeholder="Enter your email or phone number"
-      />
-    </div>
+      <!-- Email/Phone Input -->
+      <div class="input-group">
+        <label for="emailOrPhone">Email or Phone</label>
+        <input
+          type="text"
+          id="emailOrPhone"
+          formControlName="email"
+          placeholder="Enter your email or phone number"
+        />
+      </div>
 
-    <!-- Password Input -->
-    <div class="input-group">
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Enter your password" />
-    </div>
+      <!-- Password Input -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          formControlName="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
 
-    <!-- Login Button -->
-    <button type="submit" class="login-btn">Log In</button>
+      <!-- Login Button -->
+      <button type="submit" class="login-btn">Log In</button>
 
-    <!-- Signup Link -->
-    <p class="signup-text">
-      Don't have an account? <a href="/signup">Register</a>
-    </p>
+      <!-- Signup Link -->
+      <p class="signup-text">
+        Don't have an account? <a href="/signup">Register</a>
+      </p>
+    </form>
   </div>
 
   <!-- Right Side: Image -->
   <div class="login-right">
-    <img
-      src="login.png"
-      alt="Students Learning"
-    />
+    <img src="login.png" alt="Students Learning" />
   </div>
 </div>
