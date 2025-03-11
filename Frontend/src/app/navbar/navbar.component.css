@@ -1,6 +1,3 @@
-/* Navbar Background */
-.navbar {
-}
 
 /* Brand Name Styling */
 #h1 {
@@ -77,6 +74,14 @@
   font-weight: bold;
 }
 
+.logout-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ff5734;
+  font-weight: bold;
+}
+
 .username-text {
   color: #fccc42;
   cursor: pointer;
@@ -84,6 +89,9 @@
 
 .user-link :hover {
   color: #ff5734;
+}
+.logout-link :hover {
+  color: #fccc42;
 }
 .notification-icon :hover {
   color: #ff5734;

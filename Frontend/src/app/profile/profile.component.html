@@ -1,1 +1,17 @@
-<p>profile works!</p>
+<div class="profile-container">
+    <div class="profile-card">
+      <!-- Profile Picture -->
+      <div class="profile-picture">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/840/612/small/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" alt="Profile Picture" />
+      </div>
+  
+      <!-- User Info -->
+      <h2>{{ user.username }}</h2>
+      <p>Email: {{ user.email }}</p>
+      <p>Role: {{ user?.role}}</p>
+  
+      <!-- Edit Profile Button -->
+      <button class="btn btn-primary" (click)="editProfile()">Edit Profile</button>
+    </div>
+  </div>
+  

@@ -43,6 +43,7 @@ export class LoginComponent {
         console.log('Login successful:', response);
         localStorage.setItem('token', response.token);
         localStorage.setItem('role', response.role);
+        localStorage.setItem('email', this.loginForm.value.email);
         this.router.navigate(['/home']);
       },
       error: (error) => {

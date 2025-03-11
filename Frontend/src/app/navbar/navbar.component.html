@@ -20,9 +20,15 @@
       <!-- Icons & User Section -->
       <div class="d-flex align-items-center">
         <i class="bi bi-bell me-3 notification-icon"></i>
-        <a routerLink="/login" class="user-link">
-          <i class="bi bi-person-circle user-icon"></i>
-          <span class="ms-2 username-text">Username</span>
+        <a routerLink="/profile" class="nav-link d-flex align-items-center">
+          <i class="bi bi-per
+          son-circle user-icon"></i>
+        </a>
+        <a *ngIf="!isLoggedIn" routerLink="/login" class="user-link">
+          <span class="ms-2 username-text">Login</span>
+        </a>
+        <a *ngIf="isLoggedIn"  class="logout-link">
+          <span class="ms-2 logout-text" (click)="logout()">Logout</span>
         </a>
       </div>
     </div>
