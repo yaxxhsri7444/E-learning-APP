@@ -42,12 +42,6 @@ Welcome to the official repository of the **E-Learning Platform** built with **M
 
 ---
 
-## 📁 Project Structure
-
-/backend /controllers /models /routes /middleware server.js /frontend /src /app /components /services /models angular.json .env (NOT included in GitHub)
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
@@ -66,20 +60,9 @@ npm install
 cd ../frontend
 npm install
 
-3. Environment Variables
-
-Create your own .env file inside /backend:
-
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-PORT=5000
-
-(⚡ Important: .env file is NOT uploaded to GitHub for security reasons.)
-
-
 ---
 
-4. Run the Project
+3. Run the Project
 
 # Start backend server
 cd backend
@@ -101,7 +84,8 @@ Backend will run on: http://localhost:5000
 
 🎨 UI Screenshots
 
-> (Add screenshots here later after hosting or capturing from localhost.)
+> ![Screenshot 2025-04-27 163024](https://github.com/user-attachments/assets/83e09bcf-7b5a-4158-b684-2538ff052587)
+
 
 
 
@@ -116,18 +100,13 @@ Certificate generation after course completion
 
 Payment gateway integration
 
-Admin dashboard for platform management
-
-Notifications and messaging
-
-
 
 ---
 
 🙏 Credits
 
 Developed by Saksham Srivastava
-Follow me on LinkedIn
+Follow me on LinkedIn : www.linkedin.com/in/saksham-srivastava-343088255
 GitHub: yaxxhsri7444
 
 
@@ -139,19 +118,4 @@ This project is licensed under the MIT License.
 
 
 ---
-
----
-
-# **Notes:**
-- Maine `.env` mention kar diya but bola ki GitHub me upload nahi kiya gaya (for security reason) — perfect hai.
-- Tum chaaho to `"Screenshots"` wale section me apne local UI ke screen capture daal sakte ho (jab ready ho jaaye).
-- **License** wala part optional hai, warna normal "MIT License" likh dena — vo GitHub suggest karta hai.
-- Username & LinkedIn ka bhi proper credit diya hai.
----
-
-# **Ready to upload!**
-
-Agar chaaho to main **ek `LICENSE` file ka bhi content** de du MIT ke liye?  
-Chaaho to **"badhiya commit message"** bhi suggest kar dunga!  
-Batao?
 
