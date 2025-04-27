@@ -84,7 +84,7 @@ Backend will run on: http://localhost:5000
 
 🎨 UI Screenshots
 
-> ![Screenshot 2025-04-27 163024](https://github.com/user-attachments/assets/83e09bcf-7b5a-4158-b684-2538ff052587)
+> screenshots : [Screenshot 2025-04-27 163024](https://github.com/user-attachments/assets/83e09bcf-7b5a-4158-b684-2538ff052587)
 
 
 
