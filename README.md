@@ -78,13 +78,6 @@ Frontend will run on: http://localhost:4200
 
 Backend will run on: http://localhost:5000
 
-
-
----
-
-🎨 UI Screenshots
-
-> https://1drv.ms/i/c/af346007d8d4bb20/EVUKom0Y8jRIiriPWROaxAkBMFCtDePxc4UMTqZmvutxMQ?e=VICYdW
 ---
 
 ✨ Future Scope
